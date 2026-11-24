@@ -21,10 +21,25 @@ File name	Purpose
 logic_gates.v	Logic-gate RTL
 logic_gates_tb.v	All input combinations and VCD generation
  # Verilog  Program
+ module fun (
+input wire A, 
+input wire B, 
+output wire F 
+); 
+assign F = (~A) | B ;    // F = A' + B 
+endmodule
+
 
 # **Test Bench Program**
 
 
+module fun (
+input wire A, 
+input wire B, 
+output wire F 
+); 
+assign F = (~A) | B ;    // F = A' + B 
+endmodule
 
 
  
@@ -79,6 +94,7 @@ The design was compiled and simulated using Synopsys VCS, and the functionality 
 Output
 # OUTPUT
 
+![Uploading WhatsApp Image 2026-11-24 at 12.01.37 PM.jpeg…]()
 
  
 # Viva-Voce Questions
